@@ -10,7 +10,7 @@ AENI_Gradient_Library_Workflow_v2.ipynb
 Self-contained notebook implementing the complete simulation workflow, including cost modeling, Gaussian-process surrogate modeling, and adaptive measurement strategies.
 All figures and results in the manuscript can be reproduced from this notebook.
 
-A second file (AENI_Gradient_Library_Workflow.ipynb) is included only as a static version with previously generated outputs for convenience.
+A second file (AENI_Gradient_Library_Workflow.pdf) is included only as a static version with previously generated outputs for convenience.
 
 Notebook Overview
 
