@@ -4,13 +4,33 @@ This repository accompanies the manuscript and provides the simulation workflow 
 
 Contents
 
-The repository contains one Jupyter notebook:
+The repository contains two primary notebook formats:
 
 AENI_Gradient_Library_Workflow_v2.ipynb
+
 Self-contained notebook implementing the complete simulation workflow, including cost modeling, Gaussian-process surrogate modeling, and adaptive measurement strategies.
+
 All figures and results in the manuscript can be reproduced from this notebook.
 
-A second file (AENI_Gradient_Library_Workflow.pdf) is included only as a static version with previously generated outputs for convenience.
+Two versions of the notebook are included:
+
+1. Colab Version
+
+    Structured for direct execution in Google Colab.
+    
+    Uses `wget` commands to automatically download the required Book 1 datasets and supporting files.
+
+2. Standard Local `.ipynb` Version
+
+    Intended for local execution from the GitHub repository structure.
+    
+    Assumes the Book 1 datasets and supporting files are already included locally within the repository folders and are loaded directly from disk paths.
+
+A second file:
+
+AENI_Gradient_Library_Workflow.pdf
+
+is included only as a static version with previously generated outputs for convenience.
 
 Notebook Overview
 
@@ -50,7 +70,7 @@ The main notebook (AENI_Gradient_Library_Workflow_v2.ipynb) implements the follo
 
     This section builds the complete cost-aware adaptive workflow:
     
-    1.  Dynamic Drift Control
+    1. Dynamic Drift Control
     
         Simulates decision-making strategies for when to perform drift correction.
     
@@ -66,8 +86,8 @@ The main notebook (AENI_Gradient_Library_Workflow_v2.ipynb) implements the follo
     
         Evaluates how the choice of initial grid spacing influences time, uncertainty, and convergence.
     
-    4.  Local Safe-Zone Definition and Meta-Grid Simulation
+    4. Local Safe-Zone Definition and Meta-Grid Simulation
     
-        Implements “safe zones’’ to restrict indentation to regions with acceptable uncertainty or composition.
+        Implements “safe zones” to restrict indentation to regions with acceptable uncertainty or composition.
     
         Runs meta-grid simulations to compare exploration vs. exploitation balance under cost constraints.
